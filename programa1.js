@@ -1,13 +1,9 @@
-// Este es un programa que realiza operaciones aritméticas
-const numero1 = 10;
-const numero2 = 5;
+// Este programa calcula el área de una circunferencia
+const radio = parseFloat(prompt("Ingresa el radio de la circunferencia:"));
 
-const suma = numero1 + numero2;
-const resta = numero1 - numero2;
-const multiplicacion = numero1 * numero2;
-const division = numero1 / numero2;
-
-console.log("Suma:", suma);
-console.log("Resta:", resta);
-console.log("Multiplicación:", multiplicacion);
-console.log("División:", division);
+if (!isNaN(radio)) {
+    const area = Math.PI * Math.pow(radio, 2);
+    console.log("El área de la circunferencia con radio " + radio + " es " + area.toFixed(2));
+} else {
+    console.log("Por favor, ingresa un valor numérico válido para el radio.");
+}
