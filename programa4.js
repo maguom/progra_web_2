@@ -1,15 +1,14 @@
-// Este programa calcula el factorial de un número
 const numero = parseInt(prompt("Ingresa un número para calcular su factorial:"));
 
 if (!isNaN(numero)) {
     if (numero < 0) {
-        console.log("El factorial no está definido para números negativos.");
+        resultado.textContent = "El factorial no está definido para números negativos.";
     } else {
         const factorial = calcularFactorial(numero);
-        console.log("El factorial de " + numero + " es " + factorial);
+        resultado.textContent = `El factorial de ${numero} es ${factorial}`;
     }
 } else {
-    console.log("Por favor, ingresa un valor numérico válido.");
+    resultado.textContent = "Por favor, ingresa un valor numérico válido.";
 }
 
 function calcularFactorial(n) {
