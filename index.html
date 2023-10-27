@@ -1,13 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codigo de JavaScript</title>
+    <title>Mi Página HTML con 5 programas en JS</title>
 </head>
 <body>
-    <h1>Hola mundo</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus velit blanditiis, illum corrupti iste laborum alias? Debitis nobis excepturi eos.</p>
-    <script src="index.js"></script>
+    <!-- Contenido de tu página -->
+
+    <button onclick="cargarPrograma(1)">Ejecutar Programa 1</button>
+    <button onclick="cargarPrograma(2)">Ejecutar Programa 2</button>
+    <button onclick="cargarPrograma(3)">Ejecutar Programa 3</button>
+    <button onclick="cargarPrograma(4)">Ejecutar Programa 4</button>
+    <button onclick="cargarPrograma(5)">Ejecutar Programa 5</button>
+
+    <div id="resultado"></div>
+
+    <script>
+        // Función para cargar y ejecutar programas en JS
+        function cargarPrograma(numeroPrograma) {
+            const script = document.createElement('script');
+            script.src = 'programa' + numeroPrograma + '.js';
+            document.body.appendChild(script);
+            document.getElementById('resultado').innerHTML = 'Programa ' + numeroPrograma + ' ejecutado.';
+        }
+    </script>
 </body>
 </html>

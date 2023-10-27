@@ -28,7 +28,7 @@ function esPrimo(numero) {
   var n = parseInt(prompt("Ingrese la cantidad de números primos que desea imprimir"))
 
   if (!isNaN(n) && n > 0) {
-    document.write("Los primeros " + n + " números primos son: ")
+    document.write("Los primeros " + n + " números primos son los siguientes: ")
     imprimirNPrimos(n)
   } else {
     document.write("Por favor, ingrese una cantidad válida de números primos.")
