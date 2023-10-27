@@ -3,7 +3,9 @@ const radio = parseFloat(prompt("Ingresa el radio de la circunferencia:"));
 
 if (!isNaN(radio)) {
     const area = Math.PI * Math.pow(radio, 2);
-    console.log("El área de la circunferencia con radio " + radio + " es " + area.toFixed(2));
+    const resultado = "El área de la circunferencia con radio " + radio + " es " + area.toFixed(2);
+    document.getElementById('resultado').innerHTML = resultado;
 } else {
-    console.log("Por favor, ingresa un valor numérico válido para el radio.");
+    const mensajeError = "Por favor, ingresa un valor numérico válido para el radio.";
+    document.getElementById('resultado').innerHTML = mensajeError;
 }

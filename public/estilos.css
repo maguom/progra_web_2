@@ -1,0 +1,37 @@
+/* Estilos generales para la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+/* Estilos para los botones de programa */
+.program-button {
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.program-button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el resultado */
+#resultado {
+    font-size: 18px;
+    margin: 20px;
+}
+
+/* Añade estilos adicionales según tus preferencias */

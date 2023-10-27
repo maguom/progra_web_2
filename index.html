@@ -2,17 +2,18 @@
 <html>
 <head>
     <title>Mi Página HTML con 5 programas en JS</title>
+    <link rel="stylesheet" type="text/css" href="public/estilos.css">
 </head>
 <body>
-    <!-- Contenido de tu página -->
-
-    <button onclick="cargarPrograma(1)">Calculo de una circunferencia</button>
-    <button onclick="cargarPrograma(2)">Mostrar una cadena de texto</button>
-    <button onclick="cargarPrograma(3)">Calculos aritmeticos de 2 numeros</button>
-    <button onclick="cargarPrograma(4)">Calculo del factorial de un numero</button>
-    <button onclick="cargarPrograma(5)">El doble de un numero y mensaje de cadena</button>
+    <h1>Mis Programas en JavaScript</h1>
+    <button class="program-button" onclick="cargarPrograma(1)">Programa 1: Cálculo de una circunferencia</button>
+    <button class="program-button" onclick="cargarPrograma(2)">Programa 2: Mostrar una cadena de texto</button>
+    <button class="program-button" onclick="cargarPrograma(3)">Programa 3: Cálculos aritméticos de 2 números</button>
+    <button class="program-button" onclick="cargarPrograma(4)">Programa 4: Cálculo del factorial de un número</button>
+    <button class="program-button" onclick="cargarPrograma(5)">Programa 5: El doble de un número y mensaje de cadena</button>
 
     <div id="resultado"></div>
+    
     <script>
         // Función para cargar y ejecutar programas en JS
         function cargarPrograma(numeroPrograma) {
