@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Página HTML con 5 programas en JS</title>
+    <link rel="stylesheet" type="text/css" href="public/estilos.css">
+</head>
+<body>
+    <h1>Mis Programas en JavaScript</h1>
+    <button class="program-button" onclick="cargarPrograma(1)">Programa 1: Cálculo de una circunferencia</button>
+    <button class="program-button" onclick="cargarPrograma(2)">Programa 2: Mostrar una cadena de texto</button>
+    <button class="program-button" onclick="cargarPrograma(3)">Programa 3: Cálculos aritméticos de 2 números</button>
+    <button class="program-button" onclick="cargarPrograma(4)">Programa 4: Cálculo del factorial de un número</button>
+    <button class="program-button" onclick="cargarPrograma(5)">convertirTemperatura</button>
+
+    <div id="resultado"></div>
+    
+    <script>
+        // Función para cargar y ejecutar programas en JS
+        function cargarPrograma(numeroPrograma) {
+            const script = document.createElement('script');
+            script.src = 'programa' + numeroPrograma + '.js';
+            document.body.appendChild(script);
+            document.getElementById('resultado').innerHTML = 'Programa ' + numeroPrograma + ' ejecutado.';
+        }
+    </script>
+</body>
+</html>

@@ -1,27 +1,105 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Mi Página HTML con 5 programas en JS</title>
-    <link rel="stylesheet" type="text/css" href="public/estilos.css">
-</head>
-<body>
-    <h1>Mis Programas en JavaScript</h1>
-    <button class="program-button" onclick="cargarPrograma(1)">Programa 1: Cálculo de una circunferencia</button>
-    <button class="program-button" onclick="cargarPrograma(2)">Programa 2: Mostrar una cadena de texto</button>
-    <button class="program-button" onclick="cargarPrograma(3)">Programa 3: Cálculos aritméticos de 2 números</button>
-    <button class="program-button" onclick="cargarPrograma(4)">Programa 4: Cálculo del factorial de un número</button>
-    <button class="program-button" onclick="cargarPrograma(5)">convertirTemperatura</button>
 
-    <div id="resultado"></div>
-    
-    <script>
-        // Función para cargar y ejecutar programas en JS
-        function cargarPrograma(numeroPrograma) {
-            const script = document.createElement('script');
-            script.src = 'programa' + numeroPrograma + '.js';
-            document.body.appendChild(script);
-            document.getElementById('resultado').innerHTML = 'Programa ' + numeroPrograma + ' ejecutado.';
+<head>
+    <meta charset="UTF-8">
+    <title>Clases de Salsa en la Universidad Privada Domingo Savio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
         }
-    </script>
+
+        header {
+            background-color: #ff6600;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 10px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .salsa-image {
+            width: 100%;
+        }
+
+        .slogan {
+            font-size: 24px;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .learn-more {
+            text-align: center;
+        }
+
+        .learn-more a {
+            text-decoration: none;
+            background-color: #ff6600;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Clases de Salsa en la Universidad Privada Domingo Savio</h1>
+        <p>Profesionales + Humanos</p>
+    </header>
+
+    <nav>
+        <a href="#about">Acerca de nosotros</a>
+        <a href="#classes">Nuestras clases</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+
+    <div class="container" id="about">
+        <h2>Acerca de nosotros</h2>
+        <p>Bienvenidos a la Universidad Privada Domingo Savio, donde ofrecemos clases de salsa para todos los amantes del baile. Nuestro compromiso es formar profesionales con un enfoque humano, brindando una experiencia única en el mundo de la salsa.</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHnuJpoaWxDT3BNdx74fS2eRi_N1tSr3Rwm6OuJjVmqg&s" alt="Clases de Salsa" class="salsa-image">
+    </div>
+
+    <div class="container" id="classes">
+        <h2>Nuestras clases</h2>
+        <p>Ofrecemos una variedad de clases de salsa, desde principiantes hasta avanzados. Nuestros instructores altamente capacitados te guiarán en tu viaje de aprendizaje. ¡Ven y únete a nosotros para disfrutar de la salsa!</p>
+    </div>
+
+    <div class="container" id="contact">
+        <h2>Contacto</h2>
+        <p>Para obtener más información sobre nuestras clases de salsa, no dudes en contactarnos:</p>
+        <p>Correo electrónico: <a href="mailto:info@upsavio.edu">info@upsavio.edu</a></p>
+        <p>Sitio web: <a href="http://www.upsavio.edu/salsa">www.upsavio.edu/salsa</a></p>
+    </div>
+
+    <div class="container learn-more">
+        <a href="#contact">¡Aprende más sobre nuestras clases de salsa!</a>
+    </div>
 </body>
+
 </html>
