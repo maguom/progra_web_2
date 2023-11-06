@@ -1,37 +1,182 @@
-/* Estilos generales para la página */
+/* Estilos para el cuerpo del documento */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f6f8; /* Fondo azul claro */
     margin: 0;
     padding: 0;
+    color: #333; /* Texto oscuro para contraste */
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #0077b6; /* Fondo azul */
+    padding: 20px;
     text-align: center;
 }
 
-h1 {
-    color: #333;
+header h1 {
+    color: #fff; /* Texto blanco para contraste */
+    font-size: 36px;
 }
 
-/* Estilos para los botones de programa */
-.program-button {
-    background-color: #007BFF;
-    color: #fff;
-    font-size: 16px;
-    padding: 10px 20px;
-    margin: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.program-button:hover {
-    background-color: #0056b3;
-}
-
-/* Estilos para el resultado */
-#resultado {
-    font-size: 18px;
+/* Estilos para los elementos centrados */
+.centered {
+    text-align: center;
     margin: 20px;
 }
 
-/* Añade estilos adicionales según tus preferencias */
+/* Estilos para el texto estilizado */
+.styled-text {
+    color: #0077b6; /* Texto en azul */
+    font-size: 24px;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Estilos para las imágenes centradas */
+.centered-image {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los marcos izquierdos */
+.left-iframe {
+    width: 25%;
+    height: 100%;
+    float: left;
+    margin: 20px;
+}
+
+/* Estilos para los marcos derechos */
+.right-iframe {
+    width: 75%;
+    height: 100%;
+    float: left;
+    margin: 20px;
+}
+
+/* Estilos para botones */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0077b6;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #005b8e;
+}
+
+/* Estilos para formularios */
+.form-group {
+    margin: 10px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilos para tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+/* Estilos para listas */
+ul, ol, dl {
+    margin: 10px;
+    padding-left: 20px;
+}
+
+/* Estilos para etiquetas de formato */
+strong {
+    font-weight: 600;
+}
+
+em {
+    font-style: italic;
+}
+
+abbr {
+    text-decoration: underline;
+    border-bottom: 1px dotted #0077b6;
+}
+
+code {
+    background-color: #f3f6f8;
+    padding: 2px 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+}
+
+dfn {
+    font-weight: 600;
+}
+
+mark {
+    background-color: #ffcc00;
+}
+
+sup {
+    vertical-align: super;
+    font-size: 14px;
+}
+
+sub {
+    vertical-align: sub;
+    font-size: 14px;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+ins {
+    text-decoration: underline;
+}
+
+/* Estilos para caracteres especiales */
+.special-characters {
+    font-size: 24px;
+    margin: 20px;
+}
+
+/* Estilos para enlaces entre páginas */
+.btn-link {
+    color: #0077b6;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para enlaces visitados */
+a:visited {
+    color: #8653a9;
+}
