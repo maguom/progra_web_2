@@ -22,7 +22,7 @@
             line-height: 0.8;
         }
 
-        .word span:nth-child(1).active {
+        .word span.active:nth-child(1) {
             animation: balance 1.5s ease-out;
             transform-origin: bottom left;
             color: rgb(224, 64, 64); 
@@ -38,7 +38,7 @@
             }
         }
 
-        .word span:nth-child(2).active {
+        .word span.active:nth-child(2) {
             animation: shrinkjump 1s ease-in-out;
             transform-origin: bottom center;
             color: rgb(224, 64, 64); 
@@ -58,7 +58,7 @@
             }
         }
 
-        .word span:nth-child(3).active {
+        .word span.active:nth-child(3) {
             animation: falling 2s ease-out;
             transform-origin: bottom center;
             color: rgb(224, 64, 64); 
@@ -90,7 +90,15 @@
             }
         }
 
-        .word span:nth-child(4).active {
+        .word span.active:nth-child(4),
+        .word span.active:nth-child(5),
+        .word span.active:nth-child(7),
+        .word span.active:nth-child(8),
+        .word span.active:nth-child(9),
+        .word span.active:nth-child(11),
+        .word span.active:nth-child(12),
+        .word span.active:nth-child(13),
+        .word span.active:nth-child(14) {
             animation: rotate 1s ease-out;
             color: rgb(224, 64, 64); 
         }
@@ -104,114 +112,8 @@
                 transform: rotateY(360deg);
             }
         }
-        .word span:nth-child(5).active {
-            animation: rotate 1s ease-out;
-            color: rgb(224, 64, 64); 
-        }
 
-        @keyframes rotate {
-            20%, 80% {
-                transform: rotateY(180deg);
-            }
-
-            100% {
-                transform: rotateY(360deg);
-            }
-        }
-        .word span:nth-child(7).active {
-            animation: rotate 1s ease-out;
-        }
-
-        @keyframes rotate {
-            20%, 80% {
-                transform: rotateY(180deg);
-            }
-
-            100% {
-                transform: rotateY(360deg);
-            }
-        }
-        .word span:nth-child(8).active {
-            animation: rotate 1s ease-out;
-        }
-
-        @keyframes rotate {
-            20%, 80% {
-                transform: rotateY(180deg);
-            }
-
-            100% {
-                transform: rotateY(360deg);
-            }
-        }
-        .word span:nth-child(9).active {
-            animation: rotate 1s ease-out;
-        }
-
-        @keyframes rotate {
-            20%, 80% {
-                transform: rotateY(180deg);
-            }
-
-            100% {
-                transform: rotateY(360deg);
-            }
-        }
-        .word span:nth-child(11).active {
-            animation: rotate 1s ease-out;
-        }
-
-        @keyframes rotate {
-            20%, 80% {
-                transform: rotateY(180deg);
-            }
-
-            100% {
-                transform: rotateY(360deg);
-            }
-        }
-        .word span:nth-child(12).active {
-            animation: rotate 1s ease-out;
-        }
-
-        @keyframes rotate {
-            20%, 80% {
-                transform: rotateY(180deg);
-            }
-
-            100% {
-                transform: rotateY(360deg);
-            }
-        }
-        .word span:nth-child(13).active {
-            animation: rotate 1s ease-out;
-        }
-
-        @keyframes rotate {
-            20%, 80% {
-                transform: rotateY(180deg);
-            }
-
-            100% {
-                transform: rotateY(360deg);
-            }
-        }
-        .word span:nth-child(14).active {
-            animation: rotate 1s ease-out;
-        }
-
-        @keyframes rotate {
-            20%, 80% {
-                transform: rotateY(180deg);
-            }
-
-            100% {
-                transform: rotateY(360deg);
-            }
-        }
-        
-        
-        .word span:nth-child(5).active {
+        .word span.active:nth-child(5) {
             animation: toplong 1.5s linear;
             color: rgb(224, 64, 64); 
         }
@@ -227,104 +129,119 @@
         }
 
         /* Otros estilos */
-       
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Codystar';
+            background: black;
+            background-image: url('data:image/svg+xml,%3Csvg width="42" height="44" viewBox="0 0 42 44" xmlns="http://www.w3.org/2000/svg"%3E%3Cg id="Page-1" fill="none" fill-rule="evenodd"%3E%3Cg id="brick-wall" fill="%239C92AC" fill-opacity="0.4"%3E%3Cpath d="M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+            color: rgb(232, 238, 238);
+        }
 
+        h1, h2, h3, h4, h5, h6, caption {
+            color: rgb(224, 168, 64);
+        }
 
-body {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   font-family: 'Codystar';
-   background: black;
-   background-image: url('data:image/svg+xml,%3Csvg width="42" height="44" viewBox="0 0 42 44" xmlns="http://www.w3.org/2000/svg"%3E%3Cg id="Page-1" fill="none" fill-rule="evenodd"%3E%3Cg id="brick-wall" fill="%239C92AC" fill-opacity="0.4"%3E%3Cpath d="M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
-   color: rgb(232, 238, 238); /* Cambia el color del texto en el cuerpo del documento */
-}
+        p {
+            color: turquoise;
+        }
 
-h1, h2, h3, h4, h5, h6, caption {
-    color: rgb(224, 168, 64); /* Cambia el color del texto en encabezados */
-}
+        thead, th {
+            color: rgb(224, 64, 64);
+        }
 
-p {
-    color: turquoise; /* Cambia el color del texto en párrafos */
- 
-}
+        .neons {
+            margin-top: 10rem;
+            text-align: center;
+        }
 
+        .neons h1 {
+            font-size: 9rem;
+            text-align: center;
+            font-weight: bold;
+            -webkit-animation: glow 2s ease-in-out infinite alternate;
+            -moz-animation: glow 2s ease-in-out infinite alternate;
+            animation: glow 2s ease-in-out infinite alternate;
+            color: rgb(224, 160, 64);
+        }
 
-thead, th {
-    color: rgb(224, 64, 64); /* Cambia el color del texto en párrafos */
+        @-webkit-keyframes glow {
+            from {
+                color: #fff;
+                text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
+            }
 
-}
-.neons {
-   margin-top: 10rem;
-   text-align: center;
-}
+            to {
+                color: gray;
+                text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+            }
+        }
 
-.neons h1 {
-  font-size: 9rem;
-  text-align: center;
-   font-weight: bold;
-  -webkit-animation: glow 2s ease-in-out infinite alternate;
-  -moz-animation: glow 2s ease-in-out infinite alternate;
-  animation: glow 2s ease-in-out infinite alternate;
-  color: rgb(224, 160, 64); /* Cambia el color del texto en el elemento con la clase .neons y h1 */
-}
+        footer {
+            background-color: rgba(169, 169, 169, 0.8); /* Fondo gris transparente */
+            padding: 20px;
+            margin-top: 20px;
+            display: none; /* Inicialmente oculto */
+        }
 
-
-@-webkit-keyframes glow {
-     from {
-      color: #fff;
-    text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
-  }
-  
-  to {
-     color: gray;
-    text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
-  }
-}
+        #toggleFooterButton {
+            margin-top: 10px;
+            background-color: #007bff; /* Azul Bootstrap */
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
     </style>
-    <script>
-       document.addEventListener("DOMContentLoaded", function() {
-    const spans = document.querySelectorAll('.word span');
 
-    spans.forEach((span, idx) => {
-        span.addEventListener('click', (e) => {
-            e.target.classList.add('active');
-        });
-        span.addEventListener('animationend', (e) => {
-            e.target.classList.remove('active');
-        });
 
-        // Initial animation
-        setTimeout(() => {
-            span.classList.add('active');
-        }, 150 * (idx + 1)); // Ajusta el tiempo de espera
-    });
-});
+   
+   <script>
+    document.addEventListener("DOMContentLoaded", function() {
 
-//FORM
-document.addEventListener("DOMContentLoaded", function() {
-            // Obtener el formulario
-            const form = document.querySelector('form');
+        // Configuración de la animación de palabras (copiada de tu código original)
+        const spans = document.querySelectorAll('.word span');
 
-            // Agregar un evento al envío del formulario
-            form.addEventListener('submit', function(event) {
-                event.preventDefault(); // Evitar el envío del formulario por defecto
-
-                // Obtener los valores de los campos
-                const nombre = document.getElementById('nombre').value;
-                const email = document.getElementById('email').value;
-                const telefono = document.getElementById('telefono').value;
-                const clase = document.getElementById('clase').value;
-                const mensaje = document.getElementById('mensaje').value;
-
-                // Crear el mensaje de alerta
-                const alertMessage = `Datos enviados:\n\nNombre: ${nombre}\nEmail: ${email}\nTeléfono: ${telefono}\nClase: ${clase}\nMensaje: ${mensaje}`;
-
-                // Mostrar el mensaje de alerta
-                alert(alertMessage);
+        spans.forEach((span, idx) => {
+            span.addEventListener('click', (e) => {
+                e.target.classList.add('active');
             });
+            span.addEventListener('animationend', (e) => {
+                e.target.classList.remove('active');
+            });
+
+            // Initial animation
+            setTimeout(() => {
+                span.classList.add('active');
+            }, 150 * (idx + 1)); // Ajusta el tiempo de espera
         });
-    </script>
+
+        // Configuración del formulario (copiada de tu código original)
+        const form = document.querySelector('form');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const nombreFormulario = document.getElementById('nombre').value;
+            const email = document.getElementById('email').value;
+            const telefono = document.getElementById('telefono').value;
+            const clase = document.getElementById('clase').value;
+            const mensaje = document.getElementById('mensaje').value;
+
+            const alertMessage = `Datos enviados:\n\nNombre: ${nombreFormulario}\nEmail: ${email}\nTeléfono: ${telefono}\nClase: ${clase}\nMensaje: ${mensaje}`;
+
+            alert(alertMessage);
+        });
+    });
+</script>
+<script>
+    // Función para mostrar/ocultar el footer
+    function toggleFooter() {
+        var footer = document.getElementById('contactFooter');
+        footer.style.display = (footer.style.display === 'none' || footer.style.display === '') ? 'block' : 'none';
+    }
+</script>
 </head>
 
 <body>
@@ -534,12 +451,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <iframe src="https://scontent.flpb3-2.fna.fbcdn.net/v/t39.30808-6/369795389_835014374945549_3655637215136267587_n.png?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=2CxvBKYMDSwAX8NrMCV&_nc_ht=scontent.flpb3-2.fna&oh=00_AfCDQngCBSaUtEPfnZ7v_pGf8wcPu9ax4mQRGFnZnnrcEg&oe=654F75A9" name="menu" class="center-iframe"></iframe>
+                
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/al4fqRbWBb8?si=BKDZVkGVLgjnHtLV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-            <div class="col-md-6">
-                <iframe src="https://learninglab.fans/bachata/?gclid=EAIaIQobChMI0_Kz5PKwggMVKVlIAB3V1g_sEAAYASAAEgJZEPD_BwE" name="contenido" class="center-iframe"></iframe>
-            </div>
+           
         </div>
 <br>
 <br>
@@ -568,6 +483,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             <option value="pareja">Baile en Pareja</option>
                             <option value="avanzada">Salsa Avanzada</option>
                         </select>
+
                     </div>
                     <div class="form-group">
                         <label for="mensaje">Mensaje:</label>
@@ -575,11 +491,51 @@ document.addEventListener("DOMContentLoaded", function() {
                     </div>
                     <input type="submit" value="Enviar" class="btn btn-primary">
                 </form>
+<BR>
+    <BR>
+        <BR>
+
+                 <!-- Footer con la información de contacto y mapa -->
+        <footer>
+            <div class="row">
+                <div class="col-md-6">
+                    <H1>CONTACTOS</H1>
+                    <p><strong>Dirección:</strong> Av 20 de Octubre 2463, frente a Plaza Abaroa</p>
+                    <p><strong>Teléfono:</strong> 77762665</p>
+                </div>
+                <div class="col-md-6">
+                    <!-- Mapa de Google -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.3142640599463!2d-68.12883252461529!3d-16.51022468423494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f2062322b5c57%3A0x33db9b4011bb4aeb!2sDC%20Arte*21%20Studio!5e0!3m2!1ses-419!2sbo!4v1700524809754!5m2!1ses-419!2sbo" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </footer>
+  
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- JavaScript incrustado para verificar datos -->
+    <script>
+        // Solicitar el nombre al usuario
+        var nombre = prompt("Por favor, ingresa tu nombre:");
+
+        // Verificar si se ingresó un nombre
+        if (nombre !== null && nombre !== "") {
+            // Mostrar el mensaje de bienvenida
+            alert("¡Bienvenido, " + nombre + "!");
+        } else {
+            // Mostrar un mensaje por defecto si no se ingresó un nombre
+            alert("¡Bienvenido!");
+        }
+    </script>
+
+    <!-- Script jQuery para manipulación de elementos -->
+    <script>
+        $(document).ready(function () {
+            // Tu script actual...
+        });
+    </script>
+
 </body>
-<FOOTer>
-    
-</FOOTer>
 </html>
