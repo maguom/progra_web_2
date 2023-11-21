@@ -495,11 +495,10 @@
     <BR>
         <BR>
 
-                 <!-- Footer con la información de contacto y mapa -->
-        <footer>
+               <!-- Footer con la información de contacto y mapa -->
+        <footer id="contactFooter">
             <div class="row">
                 <div class="col-md-6">
-                    <H1>CONTACTOS</H1>
                     <p><strong>Dirección:</strong> Av 20 de Octubre 2463, frente a Plaza Abaroa</p>
                     <p><strong>Teléfono:</strong> 77762665</p>
                 </div>
@@ -509,9 +508,11 @@
                 </div>
             </div>
         </footer>
-  
-            </div>
-        </div>
+
+        <!-- Botón para mostrar/ocultar el footer -->
+        <button id="toggleFooterButton" onclick="toggleFooter()">Mostrar/ocultar contacto</button>
+
+        <!-- ... (código posterior) ... -->
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
